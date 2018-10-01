@@ -45,7 +45,7 @@ class ViewController: UIViewController {
                     //遍历所有识别结果
                     for item in result {
                         
-                        //绿色标注框
+                        //标注框
                         let faceRect = UIView(frame: CGRect.zero)
                         faceRect.layer.borderWidth = 3
                         faceRect.layer.borderColor = UIColor.red.cgColor

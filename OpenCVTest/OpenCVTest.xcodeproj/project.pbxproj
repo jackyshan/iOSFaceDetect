@@ -105,7 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D694E4C215DC052001CC3DE /* Build configuration list for PBXNativeTarget "OpenCVTest" */;
 			buildPhases = (
-				B0E9E28339C64B86D82099DE /* [CP] Check Pods Manifest.lock */,
+				05C0E5B364D6BA88E4145962 /* [CP] Check Pods Manifest.lock */,
 				6D694E32215DC042001CC3DE /* Sources */,
 				6D694E33215DC042001CC3DE /* Frameworks */,
 				6D694E34215DC042001CC3DE /* Resources */,
@@ -166,20 +166,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0E9E28339C64B86D82099DE /* [CP] Check Pods Manifest.lock */ = {
+		05C0E5B364D6BA88E4145962 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-OpenCVTest-checkManifestLockResult.txt",
 			);
@@ -344,10 +340,7 @@
 				DEVELOPMENT_TEAM = HKZ94N2PPE;
 				INFOPLIST_FILE = OpenCVTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzticc.xxt.OpenCVTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,10 +356,7 @@
 				DEVELOPMENT_TEAM = HKZ94N2PPE;
 				INFOPLIST_FILE = OpenCVTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzticc.xxt.OpenCVTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,7 +12,6 @@
 @interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
 @property (nonatomic,strong) AVCaptureSession *session;
-@property (nonatomic,strong) dispatch_queue_t faceQueue;
 @property (nonatomic,copy) NSMutableArray *facesViewArr;
 @property (nonatomic,strong) AVCaptureVideoPreviewLayer *previewLayer;
 
@@ -24,8 +23,6 @@
     [super viewDidLoad];
     
     _facesViewArr = [NSMutableArray arrayWithCapacity:0];
-    
-    _faceQueue = dispatch_queue_create("face", NULL);
     
     //1.获取输入设备（摄像头）
     NSArray *devices = [AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInWideAngleCamera] mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack].devices;
